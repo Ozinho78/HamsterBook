@@ -1,8 +1,11 @@
-body {
-  margin: 0;
+.container {
+  margin-right: 48px;
 }
 
-.container {
+.flexrow {
+  display: flex;
+  justify-content: center;
   padding-top: 100px;
   padding-left: 200px;
+  padding-right: 200px;
 }

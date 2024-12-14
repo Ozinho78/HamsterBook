@@ -3,11 +3,14 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { HamsterCardComponent } from './hamster-card/hamster-card.component';
+import { ProposalsComponent } from "./proposals/proposals.component";
+import { FriendboxComponent } from "./friendbox/friendbox.component";
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, HamsterCardComponent],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, HamsterCardComponent, ProposalsComponent, FriendboxComponent, MatIconModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -20,7 +23,9 @@ export class AppComponent {
     'Hallo zusammen. Freut mich, dass ihr hier seid.',
     'Hey. Mein Name ist Klaus. Hamster sein fetzt derbe.',
     'Hey. Mein Name ist Susanne. Ich bin 2 Jahre alt.',
-    'Ich esse gerne Kekse.'
+    'Ich esse gerne Kekse.',
+    'Ich bin ein Kuschelhamster.',
+    'Ich heiße Michael. Meine Hobbys sind schlafen und programmieren.'
   ];
 
   hamsterImages = [
@@ -29,7 +34,9 @@ export class AppComponent {
     '../../assets/img/hamster/3.jpg',
     '../../assets/img/hamster/4.jpg',
     '../../assets/img/hamster/5.jpg',
-    '../../assets/img/hamster/6.jpg'
+    '../../assets/img/hamster/6.jpg',
+    '../../assets/img/hamster/7.jpg',
+    '../../assets/img/hamster/8.jpg'
   ];
 
 

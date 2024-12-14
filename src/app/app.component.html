@@ -1,10 +1,25 @@
 <app-header></app-header>
 
-<div class="container">
-  <app-hamster-card [text]="postTexts[0]" [hamsterImages]="hamsterImages[0]"></app-hamster-card>
-  <app-hamster-card [text]="postTexts[1]" [hamsterImages]="hamsterImages[1]"></app-hamster-card>
-  <app-hamster-card [text]="postTexts[2]" [hamsterImages]="hamsterImages[2]"></app-hamster-card>
-  <app-hamster-card [text]="postTexts[3]" [hamsterImages]="hamsterImages[3]"></app-hamster-card>
-  <app-hamster-card [text]="postTexts[4]" [hamsterImages]="hamsterImages[4]"></app-hamster-card>
-  <app-hamster-card [text]="postTexts[5]" [hamsterImages]="hamsterImages[5]"></app-hamster-card>
+<div class="flexrow">
+  <div class="container">
+    <app-friendbox></app-friendbox>
+
+
+    <!-- <app-hamster-card [text]="postTexts[0]" [hamsterImages]="hamsterImages[0]"></app-hamster-card>
+    <app-hamster-card [text]="postTexts[1]" [hamsterImages]="hamsterImages[1]"></app-hamster-card>
+    <app-hamster-card [text]="postTexts[2]" [hamsterImages]="hamsterImages[2]"></app-hamster-card>
+    <app-hamster-card [text]="postTexts[3]" [hamsterImages]="hamsterImages[3]"></app-hamster-card>
+    <app-hamster-card [text]="postTexts[4]" [hamsterImages]="hamsterImages[4]"></app-hamster-card>
+    <app-hamster-card [text]="postTexts[5]" [hamsterImages]="hamsterImages[5]"></app-hamster-card>
+    <app-hamster-card [text]="postTexts[6]" [hamsterImages]="hamsterImages[6]"></app-hamster-card>
+    <app-hamster-card [text]="postTexts[7]" [hamsterImages]="hamsterImages[7]"></app-hamster-card> -->
+
+    <app-hamster-card
+      *ngFor="let i of [0, 1, 2, 3]"
+      [text]="postTexts[i]"
+      [hamsterImages]="hamsterImages[i]">
+    </app-hamster-card>    
+  </div>
+
+  <app-proposals></app-proposals>
 </div>
